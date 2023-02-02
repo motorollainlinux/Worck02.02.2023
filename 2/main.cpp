@@ -8,7 +8,7 @@ void UserMatrix(int** Matrix) {
     std::cout << "Enter height of matrix:\n";
     std::cin >> height;
     for (int i = 0; i < width; i++) {
-        *Matrix = (int*)calloc(height, sizeof(int)); // !! программа дальше не идёт. Я не могу понять почему. !! //
+        *Matrix = (int*)malloc(height * sizeof(int)); // !! программа дальше не идёт. Я не могу понять почему. !! //
     }
     std::cout << "Enter numbers for matrix:\n";
     for (int i = 0; i < width; i++) {
